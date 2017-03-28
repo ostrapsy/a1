@@ -43,7 +43,7 @@ $(function() {
     settings.condition_1_likes = [7000, 9999999]; // 9
 
     // In condition 2, user will receive 6 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [6000, 12000,19000,28000];  // 5
+    settings.condition_2_likes = [6000, 12000,19000,28000, 39000];  // 5
 
     settings.task_likes = [9000, 15000,22000,31000,39000];  // 5
 	// **Others' likes**     
@@ -90,9 +90,9 @@ $(function() {
 	});
   }
 	
-  function init_profiles2() {
+  function init_profiles1() {
 	  
-	  $('#profiles2').show();
+	  $('#profiles1').show();
 	  // Nedan nytt
 	  jQuery("#countdown1").countDown({
   		startNumber: 60, // in seconds
@@ -107,13 +107,13 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  $(window).unbind('beforeunload');
-	  var names = ['Arjen','AncaD','Sarah','Jane',];
+	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
-	  var times = [15000,21000,28000,39000];
+	  //var times = [15000,21000,28000,39000];
 	  //var antal = 4;
 	  //var index = 0;
 	  
-	   if (window.condition == 1) {
+	  /* if (window.condition == 1) {
 	  	var themsg1 = names[0] + " clicked on George's link";
 	  	setTimeout(function(hej) {
   				alertify.success(themsg1)
@@ -135,7 +135,7 @@ $(function() {
 	  	setTimeout(function(hej) {
   				alertify.success(themsg1)
   			}, times[2]);
-	  }
+	  }*/
 	  
 	  
 	  //Spara nedan! Funkar!
@@ -149,7 +149,216 @@ $(function() {
    	  $('#timer1').text('00:00');
     
    	  $('#continue1').on('click',function() {
-		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
+		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
+		$('#profiles1').hide();
+  		init_text2();
+	  });
+    
+   	  },60000);
+	  
+	 
+  }
+	
+function init_profiles2() {
+	  
+	  $('#profiles2').show();
+	  // Nedan nytt
+	  jQuery("#countdown1").countDown({
+  		startNumber: 60, // in seconds
+  		callBack: function(me) {
+  			console.log('over');
+          $('#timer').text('00:00');
+  		}
+  	  });
+	  // Över nytt
+	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
+	  $("#profiles2").append(html);
+	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
+	  $("#profiles2").append(html);
+	  $(window).unbind('beforeunload');
+	  //var names = ['Arjen','AncaD','Sarah','Jane',];
+	  //var times = [6000,12000,19000,28000];
+	  //var times = [15000,21000,28000,39000];
+	  //var antal = 4;
+	  //var index = 0;
+	  
+	  /* if (window.condition == 1) {
+	  	var themsg1 = names[0] + " clicked on George's link";
+	  	setTimeout(function(hej) {
+  				alertify.success(themsg1)
+  			}, times[0]);
+	  	var themsg2 = names[1] + " clicked on George's link";
+	  	setTimeout(function(nej) {
+  				alertify.success(themsg2)
+  			}, times[1]);
+	  	var themsg3 = names[2] + " clicked on George's link";
+	  	setTimeout(function(va) {
+  				alertify.success(themsg3)
+  			}, times[2]);
+	  	var themsg4 = names[3] + " clicked on George's link";
+	  	setTimeout(function(vem) {
+  				alertify.success(themsg4)
+  			}, times[3]);
+  	  } else if (window.condition == 2) {
+		var themsg1 = names[2] + " clicked on George's link";
+	  	setTimeout(function(hej) {
+  				alertify.success(themsg1)
+  			}, times[2]);
+	  }*/
+	  
+	  
+	  //Spara nedan! Funkar!
+	  //document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
+	  setTimeout(function() {
+    
+   	 //$(window).unbind('beforeunload');
+    
+  	  $('#continue1').show();
+
+   	  $('#timer1').text('00:00');
+    
+   	  $('#continue1').on('click',function() {
+		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
+		$('#profiles2').hide();
+  		init_text3();
+	  });
+    
+   	  },60000);
+	  
+	 
+  }
+	
+function init_profiles3() {
+	  
+	  $('#profiles3').show();
+	  // Nedan nytt
+	  jQuery("#countdown1").countDown({
+  		startNumber: 60, // in seconds
+  		callBack: function(me) {
+  			console.log('over');
+          $('#timer').text('00:00');
+  		}
+  	  });
+	  // Över nytt
+	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
+	  $("#profiles2").append(html);
+	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
+	  $("#profiles2").append(html);
+	  $(window).unbind('beforeunload');
+	  //var names = ['Arjen','AncaD','Sarah','Jane',];
+	  //var times = [6000,12000,19000,28000];
+	  //var times = [15000,21000,28000,39000];
+	  //var antal = 4;
+	  //var index = 0;
+	  
+	  /* if (window.condition == 1) {
+	  	var themsg1 = names[0] + " clicked on George's link";
+	  	setTimeout(function(hej) {
+  				alertify.success(themsg1)
+  			}, times[0]);
+	  	var themsg2 = names[1] + " clicked on George's link";
+	  	setTimeout(function(nej) {
+  				alertify.success(themsg2)
+  			}, times[1]);
+	  	var themsg3 = names[2] + " clicked on George's link";
+	  	setTimeout(function(va) {
+  				alertify.success(themsg3)
+  			}, times[2]);
+	  	var themsg4 = names[3] + " clicked on George's link";
+	  	setTimeout(function(vem) {
+  				alertify.success(themsg4)
+  			}, times[3]);
+  	  } else if (window.condition == 2) {
+		var themsg1 = names[2] + " clicked on George's link";
+	  	setTimeout(function(hej) {
+  				alertify.success(themsg1)
+  			}, times[2]);
+	  }*/
+	  
+	  
+	  //Spara nedan! Funkar!
+	  //document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
+	  setTimeout(function() {
+    
+   	 //$(window).unbind('beforeunload');
+    
+  	  $('#continue1').show();
+
+   	  $('#timer1').text('00:00');
+    
+   	  $('#continue1').on('click',function() {
+		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
+		$('#profiles3').hide();
+  		init_text4();
+	  });
+    
+   	  },60000);
+	  
+	 
+  }
+	
+function init_profiles4() {
+	  
+	  $('#profiles4').show();
+	  // Nedan nytt
+	  jQuery("#countdown1").countDown({
+  		startNumber: 60, // in seconds
+  		callBack: function(me) {
+  			console.log('over');
+          $('#timer').text('00:00');
+  		}
+  	  });
+	  // Över nytt
+	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
+	  $("#profiles2").append(html);
+	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
+	  $("#profiles2").append(html);
+	  $(window).unbind('beforeunload');
+	  //var names = ['Arjen','AncaD','Sarah','Jane',];
+	  //var times = [6000,12000,19000,28000];
+	  //var times = [15000,21000,28000,39000];
+	  //var antal = 4;
+	  //var index = 0;
+	  
+	  /* if (window.condition == 1) {
+	  	var themsg1 = names[0] + " clicked on George's link";
+	  	setTimeout(function(hej) {
+  				alertify.success(themsg1)
+  			}, times[0]);
+	  	var themsg2 = names[1] + " clicked on George's link";
+	  	setTimeout(function(nej) {
+  				alertify.success(themsg2)
+  			}, times[1]);
+	  	var themsg3 = names[2] + " clicked on George's link";
+	  	setTimeout(function(va) {
+  				alertify.success(themsg3)
+  			}, times[2]);
+	  	var themsg4 = names[3] + " clicked on George's link";
+	  	setTimeout(function(vem) {
+  				alertify.success(themsg4)
+  			}, times[3]);
+  	  } else if (window.condition == 2) {
+		var themsg1 = names[2] + " clicked on George's link";
+	  	setTimeout(function(hej) {
+  				alertify.success(themsg1)
+  			}, times[2]);
+	  }*/
+	  
+	  
+	  //Spara nedan! Funkar!
+	  //document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
+	  setTimeout(function() {
+    
+   	 //$(window).unbind('beforeunload');
+    
+  	  $('#continue1').show();
+
+   	  $('#timer1').text('00:00');
+    
+   	  $('#continue1').on('click',function() {
+		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
+		$('#profiles4').hide();
+  		init_text2();
 	  });
     
    	  },60000);
@@ -293,7 +502,8 @@ $(function() {
   			$('#avatar').hide();
   			window.avatar = $('.selected').attr('id');
   			window.avatarexport = /avatar_([^\s]+)/.exec(window.avatar)[1];
-    			init_text();  			
+    			//init_text(); 
+			init_fb_intro();
     		} else {
     			alertify.log("Please select an avatar","error");
     		}
@@ -303,8 +513,8 @@ $(function() {
 
 
   // **Slide:** **Description**   
-  function init_text() {
-  	$('#text').show();
+  function init_text1() {
+  	$('#text1').show();
 
   	$("#description").keyup(function(){
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
@@ -328,7 +538,109 @@ $(function() {
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
-  			$('#text').hide();
+  			$('#text1').hide();
+  			window.description = $('#description').val();
+    			init_fb_intro();  			
+    		} else {
+    			alertify.log(errormsg,"error");
+    		}
+  	});  	
+  }
+	
+function init_text2() {
+  	$('#text2').show();
+
+  	$("#description").keyup(function(){
+  	  $("#count").text("Characters left: " + (400 - $(this).val().length));
+  	});
+
+  	$('#submit_text').on('click',function() {
+
+  		var error = 0;
+  		if($('#description').val() == "") {
+  			error = 1;
+  			errormsg = 'Please enter text';
+  		}
+  		if($('#description').val() !== "" && $('#description').val().length < 140) {
+		
+  			error = 1;
+  			errormsg = 'Please write a bit more';
+			}
+  		if($('#description').val().length > 401) {
+  		
+  			error = 1;
+  			errormsg = 'Please enter less text';
+  		}  		
+  		if(error == 0) {
+  			$('#text2').hide();
+  			window.description = $('#description').val();
+    			init_fb_intro();  			
+    		} else {
+    			alertify.log(errormsg,"error");
+    		}
+  	});  	
+  }
+	
+function init_text3() {
+  	$('#text3').show();
+
+  	$("#description").keyup(function(){
+  	  $("#count").text("Characters left: " + (400 - $(this).val().length));
+  	});
+
+  	$('#submit_text').on('click',function() {
+
+  		var error = 0;
+  		if($('#description').val() == "") {
+  			error = 1;
+  			errormsg = 'Please enter text';
+  		}
+  		if($('#description').val() !== "" && $('#description').val().length < 140) {
+		
+  			error = 1;
+  			errormsg = 'Please write a bit more';
+			}
+  		if($('#description').val().length > 401) {
+  		
+  			error = 1;
+  			errormsg = 'Please enter less text';
+  		}  		
+  		if(error == 0) {
+  			$('#text3').hide();
+  			window.description = $('#description').val();
+    			init_fb_intro();  			
+    		} else {
+    			alertify.log(errormsg,"error");
+    		}
+  	});  	
+  }
+	
+function init_text4() {
+  	$('#text4').show();
+
+  	$("#description").keyup(function(){
+  	  $("#count").text("Characters left: " + (400 - $(this).val().length));
+  	});
+
+  	$('#submit_text').on('click',function() {
+
+  		var error = 0;
+  		if($('#description').val() == "") {
+  			error = 1;
+  			errormsg = 'Please enter text';
+  		}
+  		if($('#description').val() !== "" && $('#description').val().length < 140) {
+		
+  			error = 1;
+  			errormsg = 'Please write a bit more';
+			}
+  		if($('#description').val().length > 401) {
+  		
+  			error = 1;
+  			errormsg = 'Please enter less text';
+  		}  		
+  		if(error == 0) {
+  			$('#text4').hide();
   			window.description = $('#description').val();
     			init_fb_intro();  			
     		} else {
