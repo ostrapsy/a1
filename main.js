@@ -84,7 +84,7 @@ $(function() {
   			//$('#msg_all_done').show();
   			$("#loader").hide();
 			$('#after_task').hide();
-			init_profiles1();
+			init_text1();
   		}, 4000);
 		
 	});
@@ -102,10 +102,10 @@ $(function() {
   		}
   	  });
 	  // Över nytt
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
-	  $("#profiles2").append(html);
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
-	  $("#profiles2").append(html);
+	  var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
+	  $("#profiles3").append(html);
+	  var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
+	  $("#profiles3").append(html);
 	  $(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
@@ -540,7 +540,7 @@ function init_profiles4() {
   		if(error == 0) {
   			$('#text1').hide();
   			window.description = $('#description').val();
-    			init_fb_intro();  			
+    			init_profiles1();  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -574,7 +574,7 @@ function init_text2() {
   		if(error == 0) {
   			$('#text2').hide();
   			window.description = $('#description').val();
-    			init_fb_intro();  			
+    			init_profiles2();  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -608,7 +608,7 @@ function init_text3() {
   		if(error == 0) {
   			$('#text3').hide();
   			window.description = $('#description').val();
-    			init_fb_intro();  			
+    			init_profiles3();  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -642,7 +642,7 @@ function init_text4() {
   		if(error == 0) {
   			$('#text4').hide();
   			window.description = $('#description').val();
-    			init_fb_intro();  			
+    			init_profiles4();  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
