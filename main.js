@@ -103,7 +103,7 @@ $(function() {
   	  });
 	  // Över nytt
 	  var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
-	  $("#profiles3").append(html);
+	  $("#profiles1").append(html);
 	  //var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
 	  //$("#profiles3").append(html);
 	  $(window).unbind('beforeunload');
