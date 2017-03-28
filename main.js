@@ -98,14 +98,14 @@ $(function() {
   		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
-          $('#timer').text('00:00');
+          $('#timer1').text('00:00');
   		}
   	  });
 	  // Över nytt
 	  var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles3").append(html);
-	  var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
-	  $("#profiles3").append(html);
+	  //var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
+	  //$("#profiles3").append(html);
 	  $(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
@@ -167,7 +167,7 @@ function init_profiles2() {
   		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
-          $('#timer').text('00:00');
+          $('#timer1').text('00:00');
   		}
   	  });
 	  // Över nytt
@@ -236,7 +236,7 @@ function init_profiles3() {
   		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
-          $('#timer').text('00:00');
+          $('#timer1').text('00:00');
   		}
   	  });
 	  // Över nytt
@@ -305,7 +305,7 @@ function init_profiles4() {
   		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
-          $('#timer').text('00:00');
+          $('#timer1').text('00:00');
   		}
   	  });
 	  // Över nytt
