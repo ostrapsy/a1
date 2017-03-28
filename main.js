@@ -520,7 +520,7 @@ function init_profiles4() {
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
-  	$('#submit_text').on('click',function() {
+  	$('#submit_text1').on('click',function() {
 
   		var error = 0;
   		if($('#description').val() == "") {
@@ -554,7 +554,7 @@ function init_text2() {
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
-  	$('#submit_text').on('click',function() {
+  	$('#submit_text2').on('click',function() {
 
   		var error = 0;
   		if($('#description').val() == "") {
@@ -588,7 +588,7 @@ function init_text3() {
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
-  	$('#submit_text').on('click',function() {
+  	$('#submit_text3').on('click',function() {
 
   		var error = 0;
   		if($('#description').val() == "") {
@@ -622,7 +622,7 @@ function init_text4() {
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
-  	$('#submit_text').on('click',function() {
+  	$('#submit_text4').on('click',function() {
 
   		var error = 0;
   		if($('#description').val() == "") {
