@@ -84,7 +84,7 @@ $(function() {
   			//$('#msg_all_done').show();
   			$("#loader").hide();
 			$('#after_task').hide();
-			init_profiles2();
+			init_profiles1();
   		}, 4000);
 		
 	});
