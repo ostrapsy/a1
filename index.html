@@ -330,14 +330,7 @@ De två divsen nedan är för after task
 	<br>
 	<button type="submit" id="continue1" style="display:none;">Continue</button>	
 	</div>
-	<script type="text/javascript">
-	// Popup window code
-	function newPopup(url) {
-		window.linkClick = 1;
-		popupWindow = window.open(
-			url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-	}
-	</script>
+	
 <script type="template/text" id="newtmp1"> 
   {{#posts2}}
     <div class="entry1">
@@ -361,28 +354,6 @@ De två divsen nedan är för after task
 
     </div>
   {{/posts2}}
-  {{#posts1}}
-    <div class="entry1">
-    <div class="tophalf1">
-
-    	<img src="{{avatar}}" class="avatar">
-        <h3>{{username}}</h3>
-    	
-    	<div class="main1">
-		<p><i>"A {{userage}} year old {{usergender}} who's into {{userpolitic}}."</i></p>
-		<p>{{text}} <a href="JavaScript:newPopup('http://www.asgsargs.com/javascript/examples/sample_popup.cfm');" id="link">petition.</a></p>
-    	</div>
-	
-	
-    	<br style="clear:both;">
-
-    </div>	
-
-    <div class="bottomhalf">
-    </div>
-
-    </div>
-  {{/posts1}}
 </script>
 </div>
 
