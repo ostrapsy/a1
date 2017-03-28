@@ -12,6 +12,33 @@ window.others = {
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
         "likes": [12000, 20000, 25000] //3
       },
+	  {
+        "avatar": "avatars/others/george.png",
+        "username": "Glenn",
+	"userage": "26",
+	"usergender": "male",
+	"userpolitic": "technology",
+        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
+        "likes": [12000, 20000, 25000] //3
+      },
+	  {
+        "avatar": "avatars/others/george.png",
+        "username": "Humperduss",
+	"userage": "26",
+	"usergender": "male",
+	"userpolitic": "technology",
+        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
+        "likes": [12000, 20000, 25000] //3
+      },
+	  {
+        "avatar": "avatars/others/george.png",
+        "username": "Barbara",
+	"userage": "26",
+	"usergender": "male",
+	"userpolitic": "technology",
+        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
+        "likes": [12000, 20000, 25000] //3
+      },
       {
         "avatar": "avatars/others/sarah.png",
         "username": "Sarah",
