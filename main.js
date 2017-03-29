@@ -93,6 +93,7 @@ $(function() {
   function init_profiles1() {
 	  
 	  $('#profiles1').show();
+	  shortcut.add("Backspace",function() {});
 	  // Nedan nytt
 	  jQuery("#countdown1").countDown({
   		startNumber: 60, // in seconds
@@ -515,7 +516,7 @@ function init_profiles4() {
   // **Slide:** **Description**   
   function init_text1() {
   	$('#text1').show();
-
+	shortcut.remove("Backspace",function() {});
   	$("#description1").keyup(function(){
   	  $("#count1").text("Characters left: " + (400 - $(this).val().length));
   	});
@@ -551,7 +552,7 @@ function init_text2() {
   	$('#text2').show();
 
   	$("#description2").keyup(function(){
-  	  $("#count2").text2("Characters left: " + (400 - $(this).val().length));
+  	  $("#count2").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text2').on('click',function() {
@@ -585,7 +586,7 @@ function init_text3() {
   	$('#text3').show();
 
   	$("#description3").keyup(function(){
-  	  $("#count3").text3("Characters left: " + (400 - $(this).val().length));
+  	  $("#count3").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text3').on('click',function() {
@@ -619,7 +620,7 @@ function init_text4() {
   	$('#text4').show();
 
   	$("#description4").keyup(function(){
-  	  $("#count4").text4("Characters left: " + (400 - $(this).val().length));
+  	  $("#count4").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text4').on('click',function() {
