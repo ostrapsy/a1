@@ -441,7 +441,25 @@ img.avatar.selected {
   margin-left: 80px;
 }
 
-#description {
+#description1 {
+	width: 500px !important;
+	height: 100px !important;
+	max-height: 100px !important;
+}
+
+#description2 {
+	width: 500px !important;
+	height: 100px !important;
+	max-height: 100px !important;
+}
+
+#description3 {
+	width: 500px !important;
+	height: 100px !important;
+	max-height: 100px !important;
+}
+
+#description4 {
 	width: 500px !important;
 	height: 100px !important;
 	max-height: 100px !important;
