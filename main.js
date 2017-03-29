@@ -163,11 +163,11 @@ function init_profiles2() {
 	  
 	  $('#profiles2').show();
 	  // Nedan nytt
-	  jQuery("#countdown1").countDown({
+	  jQuery("#countdown2").countDown({
   		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
-          $('#timer1').text('00:00');
+          $('#timer2').text('00:00');
   		}
   	  });
 	  // Över nytt
@@ -213,11 +213,11 @@ function init_profiles2() {
     
    	 //$(window).unbind('beforeunload');
     
-  	  $('#continue1').show();
+  	  $('#continue2').show();
 
-   	  $('#timer1').text('00:00');
+   	  $('#timer2').text('00:00');
     
-   	  $('#continue1').on('click',function() {
+   	  $('#continue2').on('click',function() {
 		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
 		$('#profiles2').hide();
   		init_text3();
@@ -232,11 +232,11 @@ function init_profiles3() {
 	  
 	  $('#profiles3').show();
 	  // Nedan nytt
-	  jQuery("#countdown1").countDown({
+	  jQuery("#countdown3").countDown({
   		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
-          $('#timer1').text('00:00');
+          $('#timer3').text('00:00');
   		}
   	  });
 	  // Över nytt
@@ -282,11 +282,11 @@ function init_profiles3() {
     
    	 //$(window).unbind('beforeunload');
     
-  	  $('#continue1').show();
+  	  $('#continue3').show();
 
-   	  $('#timer1').text('00:00');
+   	  $('#timer3').text('00:00');
     
-   	  $('#continue1').on('click',function() {
+   	  $('#continue3').on('click',function() {
 		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
 		$('#profiles3').hide();
   		init_text4();
@@ -301,11 +301,11 @@ function init_profiles4() {
 	  
 	  $('#profiles4').show();
 	  // Nedan nytt
-	  jQuery("#countdown1").countDown({
+	  jQuery("#countdown4").countDown({
   		startNumber: 60, // in seconds
   		callBack: function(me) {
   			console.log('over');
-          $('#timer1').text('00:00');
+          $('#timer4').text('00:00');
   		}
   	  });
 	  // Över nytt
@@ -351,11 +351,11 @@ function init_profiles4() {
     
    	 //$(window).unbind('beforeunload');
     
-  	  $('#continue1').show();
+  	  $('#continue4').show();
 
-   	  $('#timer1').text('00:00');
+   	  $('#timer4').text('00:00');
     
-   	  $('#continue1').on('click',function() {
+   	  $('#continue4').on('click',function() {
 		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
 		$('#profiles4').hide();
   		init_text2();
@@ -685,7 +685,7 @@ function init_text4() {
     
     $('#task').show();
 
-	shortcut.add("Backspace",function() {});      
+	//shortcut.add("Backspace",function() {});      
 
   	jQuery("#countdown").countDown({
   		startNumber: window.settings.tasklength/1000, // in seconds
