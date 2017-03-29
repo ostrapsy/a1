@@ -517,7 +517,7 @@ function init_profiles4() {
   	$('#text1').show();
 
   	$("#description1").keyup(function(){
-  	  $("#count1").text1("Characters left: " + (400 - $(this).val().length));
+  	  $("#count1").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text1').on('click',function() {
