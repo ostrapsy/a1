@@ -685,7 +685,7 @@ function init_text4() {
     
     $('#task').show();
 
-	//shortcut.add("Backspace",function() {});      
+	shortcut.add("Backspace",function() {});      
 
   	jQuery("#countdown").countDown({
   		startNumber: window.settings.tasklength/1000, // in seconds
@@ -790,7 +790,7 @@ function init_text4() {
     // Redirect, default after 180000ms = 180s = 3min
     setTimeout(function() {
     
-    //$(window).unbind('beforeunload');
+    $(window).unbind('beforeunload');
     
     $('#continue').show();
 
