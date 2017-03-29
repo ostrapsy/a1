@@ -109,7 +109,7 @@ $(function() {
 	  $("#profiles1").append(html);
 	  //var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
 	  //$("#profiles3").append(html);
-	  $(window).unbind('beforeunload');
+	  //$(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
 	  //var times = [15000,21000,28000,39000];
