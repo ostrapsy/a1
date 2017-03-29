@@ -171,8 +171,8 @@ function init_profiles2() {
   		}
   	  });
 	  // Över nytt
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
-	  $("#profiles2").append(html);
+	  //var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
+	  //$("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  $(window).unbind('beforeunload');
@@ -516,30 +516,30 @@ function init_profiles4() {
   function init_text1() {
   	$('#text1').show();
 
-  	$("#description").keyup(function(){
+  	$("#description1").keyup(function(){
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text1').on('click',function() {
 
   		var error = 0;
-  		if($('#description').val() == "") {
+  		if($('#description1').val() == "") {
   			error = 1;
   			errormsg = 'Please enter text';
   		}
-  		if($('#description').val() !== "" && $('#description').val().length < 140) {
+  		if($('#description1').val() !== "" && $('#description').val().length < 140) {
 		
   			error = 1;
   			errormsg = 'Please write a bit more';
 			}
-  		if($('#description').val().length > 401) {
+  		if($('#description1').val().length > 401) {
   		
   			error = 1;
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
   			$('#text1').hide();
-  			window.description = $('#description').val();
+  			window.description1 = $('#description1').val();
     			init_profiles1();  			
     		} else {
     			alertify.log(errormsg,"error");
@@ -550,30 +550,30 @@ function init_profiles4() {
 function init_text2() {
   	$('#text2').show();
 
-  	$("#description").keyup(function(){
+  	$("#description2").keyup(function(){
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text2').on('click',function() {
 
   		var error = 0;
-  		if($('#description').val() == "") {
+  		if($('#description2').val() == "") {
   			error = 1;
   			errormsg = 'Please enter text';
   		}
-  		if($('#description').val() !== "" && $('#description').val().length < 140) {
+  		if($('#description2').val() !== "" && $('#description2').val().length < 140) {
 		
   			error = 1;
   			errormsg = 'Please write a bit more';
 			}
-  		if($('#description').val().length > 401) {
+  		if($('#description2').val().length > 401) {
   		
   			error = 1;
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
   			$('#text2').hide();
-  			window.description = $('#description').val();
+  			window.description2 = $('#description2').val();
     			init_profiles2();  			
     		} else {
     			alertify.log(errormsg,"error");
@@ -584,30 +584,30 @@ function init_text2() {
 function init_text3() {
   	$('#text3').show();
 
-  	$("#description").keyup(function(){
+  	$("#description3").keyup(function(){
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text3').on('click',function() {
 
   		var error = 0;
-  		if($('#description').val() == "") {
+  		if($('#description3').val() == "") {
   			error = 1;
   			errormsg = 'Please enter text';
   		}
-  		if($('#description').val() !== "" && $('#description').val().length < 140) {
+  		if($('#description3').val() !== "" && $('#description3').val().length < 140) {
 		
   			error = 1;
   			errormsg = 'Please write a bit more';
 			}
-  		if($('#description').val().length > 401) {
+  		if($('#description3').val().length > 401) {
   		
   			error = 1;
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
   			$('#text3').hide();
-  			window.description = $('#description').val();
+  			window.description3 = $('#description3').val();
     			init_profiles3();  			
     		} else {
     			alertify.log(errormsg,"error");
@@ -618,30 +618,30 @@ function init_text3() {
 function init_text4() {
   	$('#text4').show();
 
-  	$("#description").keyup(function(){
+  	$("#description4").keyup(function(){
   	  $("#count").text("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text4').on('click',function() {
 
   		var error = 0;
-  		if($('#description').val() == "") {
+  		if($('#description4').val() == "") {
   			error = 1;
   			errormsg = 'Please enter text';
   		}
-  		if($('#description').val() !== "" && $('#description').val().length < 140) {
+  		if($('#description4').val() !== "" && $('#description4').val().length < 140) {
 		
   			error = 1;
   			errormsg = 'Please write a bit more';
 			}
-  		if($('#description').val().length > 401) {
+  		if($('#description4').val().length > 401) {
   		
   			error = 1;
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
   			$('#text4').hide();
-  			window.description = $('#description').val();
+  			window.description4 = $('#description4').val();
     			init_profiles4();  			
     		} else {
     			alertify.log(errormsg,"error");
