@@ -74,11 +74,11 @@ $(function() {
   	});	
   }
 	
-  function init_after_task() {
+  function init_after_task_c1() {
 
-	$('#after_task').show();
+	$('#after_task_c1').show();
 	
-  	$('#submit_after_task').on('click',function() {
+  	$('#submit_after_task_c1').on('click',function() {
 		/*$("#loader1").show();
 		setTimeout(function() {
   			//$('#msg_all_done').show();
@@ -86,7 +86,25 @@ $(function() {
 			$('#after_task').hide();
 			init_text1();
   		}, 4000);*/
-		$('#after_task').hide();
+		$('#after_task_c1').hide();
+		init_text1();
+		
+	});
+  }
+	
+function init_after_task_c2() {
+
+	$('#after_task_c2').show();
+	
+  	$('#submit_after_task_c2').on('click',function() {
+		/*$("#loader1").show();
+		setTimeout(function() {
+  			//$('#msg_all_done').show();
+  			$("#loader").hide();
+			$('#after_task').hide();
+			init_text1();
+  		}, 4000);*/
+		$('#after_task_c2').hide();
 		init_text1();
 		
 	});
@@ -804,7 +822,10 @@ function init_text4() {
     
     $('#continue').on('click',function() {
 			$('#task').hide();
-  			init_after_task();
+	    		if (window.condition == 1)
+				init_after_task_c1();
+	    		else if (window.condition == 2)
+  				init_after_task_c2();
     });
     
     },window.settings.tasklength); // timing for task
