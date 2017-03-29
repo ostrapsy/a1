@@ -527,7 +527,7 @@ function init_profiles4() {
   			error = 1;
   			errormsg = 'Please enter text';
   		}
-  		if($('#description1').val() !== "" && $('#description').val().length < 140) {
+  		if($('#description1').val() !== "" && $('#description1').val().length < 140) {
 		
   			error = 1;
   			errormsg = 'Please write a bit more';
