@@ -517,7 +517,7 @@ function init_profiles4() {
   	$('#text1').show();
 
   	$("#description1").keyup(function(){
-  	  $("#count1").text("Characters left: " + (400 - $(this).val().length));
+  	  $("#count1").text1("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text1').on('click',function() {
@@ -551,7 +551,7 @@ function init_text2() {
   	$('#text2').show();
 
   	$("#description2").keyup(function(){
-  	  $("#count2").text("Characters left: " + (400 - $(this).val().length));
+  	  $("#count2").text2("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text2').on('click',function() {
@@ -585,7 +585,7 @@ function init_text3() {
   	$('#text3').show();
 
   	$("#description3").keyup(function(){
-  	  $("#count3").text("Characters left: " + (400 - $(this).val().length));
+  	  $("#count3").text3("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text3').on('click',function() {
@@ -619,7 +619,7 @@ function init_text4() {
   	$('#text4').show();
 
   	$("#description4").keyup(function(){
-  	  $("#count4").text("Characters left: " + (400 - $(this).val().length));
+  	  $("#count4").text4("Characters left: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text4').on('click',function() {
