@@ -79,13 +79,15 @@ $(function() {
 	$('#after_task').show();
 	
   	$('#submit_after_task').on('click',function() {
-		$("#loader1").show();
+		/*$("#loader1").show();
 		setTimeout(function() {
   			//$('#msg_all_done').show();
   			$("#loader").hide();
 			$('#after_task').hide();
 			init_text1();
-  		}, 4000);
+  		}, 4000);*/
+		$('#after_task').hide();
+		init_text1();
 		
 	});
   }
@@ -163,6 +165,7 @@ $(function() {
 function init_profiles2() {
 	  
 	  $('#profiles2').show();
+	  shortcut.add("Backspace",function() {});
 	  // Nedan nytt
 	  jQuery("#countdown2").countDown({
   		startNumber: 60, // in seconds
@@ -232,6 +235,7 @@ function init_profiles2() {
 function init_profiles3() {
 	  
 	  $('#profiles3').show();
+	  shortcut.add("Backspace",function() {});
 	  // Nedan nytt
 	  jQuery("#countdown3").countDown({
   		startNumber: 60, // in seconds
@@ -241,10 +245,10 @@ function init_profiles3() {
   		}
   	  });
 	  // Över nytt
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
-	  $("#profiles2").append(html);
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
-	  $("#profiles2").append(html);
+	  var tpl = $('#newtmp3').html(),html = Mustache.to_html(tpl, others3);
+	  $("#profiles3").append(html);
+	  //var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
+	  //$("#profiles2").append(html);
 	  $(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
@@ -301,6 +305,7 @@ function init_profiles3() {
 function init_profiles4() {
 	  
 	  $('#profiles4').show();
+	  shortcut.add("Backspace",function() {});
 	  // Nedan nytt
 	  jQuery("#countdown4").countDown({
   		startNumber: 60, // in seconds
@@ -310,10 +315,10 @@ function init_profiles4() {
   		}
   	  });
 	  // Över nytt
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
-	  $("#profiles2").append(html);
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
-	  $("#profiles2").append(html);
+	  var tpl = $('#newtmp4').html(),html = Mustache.to_html(tpl, others3);
+	  $("#profiles4").append(html);
+	  //var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
+	  //$("#profiles2").append(html);
 	  $(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
@@ -550,7 +555,7 @@ function init_profiles4() {
 	
 function init_text2() {
   	$('#text2').show();
-
+	shortcut.remove("Backspace",function() {});
   	$("#description2").keyup(function(){
   	  $("#count2").text("Characters left: " + (400 - $(this).val().length));
   	});
@@ -584,7 +589,7 @@ function init_text2() {
 	
 function init_text3() {
   	$('#text3').show();
-
+	shortcut.remove("Backspace",function() {});
   	$("#description3").keyup(function(){
   	  $("#count3").text("Characters left: " + (400 - $(this).val().length));
   	});
@@ -618,7 +623,7 @@ function init_text3() {
 	
 function init_text4() {
   	$('#text4').show();
-
+	shortcut.remove("Backspace",function() {});
   	$("#description4").keyup(function(){
   	  $("#count4").text("Characters left: " + (400 - $(this).val().length));
   	});
@@ -705,7 +710,7 @@ function init_text4() {
 			  "usergender": window.gender,
 			  "userpolitic": window.politic,
 			  "text": window.description,
-			  "likes": window.settings.task_likes,
+			  "likes": window.settings.condition_likes,
 			  "usernames": window.settings.likes_by
 			}
 		  ]
