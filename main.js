@@ -197,7 +197,7 @@ function init_profiles2() {
 	  //$("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
-	  $(window).unbind('beforeunload');
+	  //$(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
 	  //var times = [15000,21000,28000,39000];
@@ -267,7 +267,7 @@ function init_profiles3() {
 	  $("#profiles3").append(html);
 	  //var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  //$("#profiles2").append(html);
-	  $(window).unbind('beforeunload');
+	  //$(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
 	  //var times = [15000,21000,28000,39000];
@@ -337,7 +337,7 @@ function init_profiles4() {
 	  $("#profiles4").append(html);
 	  //var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  //$("#profiles2").append(html);
-	  $(window).unbind('beforeunload');
+	  //$(window).unbind('beforeunload');
 	  //var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
 	  //var times = [15000,21000,28000,39000];
@@ -380,7 +380,7 @@ function init_profiles4() {
    	  $('#timer4').text('00:00');
     
    	  $('#continue4').on('click',function() {
-		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
+		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d1='+encodeURI(window.description1)+'&d2='+encodeURI(window.description2)+'&d3='+encodeURI(window.description3)+'&d4='+encodeURI(window.description4)+'&click='+window.linkClick+'&old='+window.old;
 		$('#profiles4').hide();
   		init_text2();
 	  });
