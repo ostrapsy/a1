@@ -4,6 +4,15 @@
 window.others = {
   "posts" : [
       {
+        "avatar": "avatars/avatar_18.png",
+        "username": "Bogdan",
+	"userage": "28",
+	"usergender": "male",
+	"userpolitic": "music, surfing the web and technology",
+        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
+        "likes": [12000, 20000, 25000] //3
+      },
+	  {
         "avatar": "avatars/others/george.png",
         "username": "George",
 	"userage": "26",
@@ -13,29 +22,20 @@ window.others = {
         "likes": [12000, 20000, 25000] //3
       },
 	  {
-        "avatar": "avatars/others/george.png",
+        "avatar": "avatars/avatar_11.png",
+        "username": "Nicole",
+	"userage": "23",
+	"usergender": "female",
+	"userpolitic": "yoga, technology and socializing",
+        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
+        "likes": [12000, 20000, 25000] //3
+      },
+	  {
+        "avatar": "avatars/avatar_0.png",
         "username": "Glenn",
-	"userage": "26",
+	"userage": "30",
 	"usergender": "male",
-	"userpolitic": "technology",
-        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [12000, 20000, 25000] //3
-      },
-	  {
-        "avatar": "avatars/others/george.png",
-        "username": "Humperduss",
-	"userage": "26",
-	"usergender": "male",
-	"userpolitic": "technology",
-        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [12000, 20000, 25000] //3
-      },
-	  {
-        "avatar": "avatars/others/george.png",
-        "username": "Barbara",
-	"userage": "26",
-	"usergender": "male",
-	"userpolitic": "technology",
+	"userpolitic": "technology, cars and gaming",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
         "likes": [12000, 20000, 25000] //3
       },
