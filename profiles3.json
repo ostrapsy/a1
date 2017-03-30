@@ -52,7 +52,7 @@ window.others3 = {
         "text": "[Insert text1]",
         "likes": [10000, 15000, 24000, 28000] //4
       },
-    ]
+    ],
   "posts2" : [
       {
         "avatar": "avatars/others/george.png",
@@ -103,7 +103,7 @@ window.others3 = {
         "text": "[Insert text2]",
         "likes": [10000, 15000, 24000, 28000] //4
       },
-    ]
+    ],
 "posts3" : [
       {
         "avatar": "avatars/others/george.png",
@@ -154,7 +154,7 @@ window.others3 = {
         "text": "[Insert text3]",
         "likes": [10000, 15000, 24000, 28000] //4
       },
-    ]
+    ],
 "posts4" : [
       {
         "avatar": "avatars/others/george.png",
