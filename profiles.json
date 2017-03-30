@@ -4,7 +4,7 @@
 window.others = {
   "posts" : [
       {
-        "avatar": "avatars/avatar_18.png",
+        "avatar": "avatars/others/avatar_18.png",
         "username": "Bogdan",
 	"userage": "28",
 	"usergender": "male",
@@ -22,7 +22,7 @@ window.others = {
         "likes": [12000, 20000, 25000] //3
       },
 	  {
-        "avatar": "avatars/avatar_11.png",
+        "avatar": "avatars/others/avatar_11.png",
         "username": "Nicole",
 	"userage": "23",
 	"usergender": "female",
@@ -31,7 +31,7 @@ window.others = {
         "likes": [9000, 12000, 20000, 25000] //3
       },
 	  {
-        "avatar": "avatars/avatar_0.png",
+        "avatar": "avatars/others/avatar_0.png",
         "username": "Glenn",
 	"userage": "30",
 	"usergender": "male",
