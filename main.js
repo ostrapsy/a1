@@ -525,18 +525,13 @@ function init_profiles4() {
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
-  			//$('#text1').hide();
   			window.description1 = $('#description1').val();
 			$("#loader1").show();
 			setTimeout(function() {
-  			//$('#msg_all_done').show();
-  			$("#loader1").hide();
-			$('#text1').hide();
-			//$('#after_task').hide();
-			//init_text1();
-			init_profiles1();
-  		}, 4000);
-    			//init_profiles1();  			
+  				$("#loader1").hide();
+				$('#text1').hide();
+				init_profiles1();
+  			}, 4000);			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -568,9 +563,13 @@ function init_text2() {
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
-  			$('#text2').hide();
   			window.description2 = $('#description2').val();
-    			init_profiles2();  			
+    			$("#loader2").show();
+			setTimeout(function() {
+  				$("#loader2").hide();
+				$('#text2').hide();
+				init_profiles2();
+  			}, 4000);  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -602,9 +601,13 @@ function init_text3() {
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
-  			$('#text3').hide();
   			window.description3 = $('#description3').val();
-    			init_profiles3();  			
+    			$("#loader3").show();
+			setTimeout(function() {
+  				$("#loader3").hide();
+				$('#text3').hide();
+				init_profiles3();
+  			}, 4000); 			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -636,9 +639,13 @@ function init_text4() {
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
-  			$('#text4').hide();
   			window.description4 = $('#description4').val();
-    			init_profiles4();  			
+    			$("#loader4").show();
+			setTimeout(function() {
+  				$("#loader4").hide();
+				$('#text4').hide();
+				init_profiles4();
+  			}, 4000);  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
