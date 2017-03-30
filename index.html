@@ -294,48 +294,18 @@ You can edit the instructions text. The prompt to try and form an impression of 
 	You received several likes.<br><br>
 	<button type="submit"  id="submit_after_task_c2">Continue</button> 
 </div>
-<!--
-/*
-De två divsen nedan är för after task
-*/
--->
-<div id="profiles" style="display:none;">
-	<button type="submit" id="submit_after_profiles">Continue</button>
-<script type="template/text" id="newtmp">
-  {{#posts1}}
-    <div class="entry1">
-    <div class="tophalf1">
 
-    	<img src="{{avatar}}" class="avatar">
-        <h3>{{username}}</h3>
-    	
-    	<div class="main1">
-		<p><i>"A {{userage}} year old {{usergender}} who's into {{userpolitic}}."</i></p>
-		<p>{{text}} <a href="https://www.google.com">survery</a></p>
-    	</div>
-	
-	
-    	<br style="clear:both;">
-
-    </div>	
-
-    <div class="bottomhalf">
-        </div>
-
-    </div>
-  {{/posts1}}  
-</script>
-</div>
 
 	
 <div id="profiles1" style="display:none;">
-	<div id="countdown1"><span class="secs" style="display: none;"></span>You can now see how your first impression of the users compares to their descriptions of themselves.<br><br>time left:<br><span id="timer1" class="cntr label label-info"></span>
+	<h3>Yeah</h3>
+	<div id="countdown1"><span class="secs" style="display: none;"></span>Please read what your groupmates think about this issue.<br><br>time left:<br><span id="timer1" class="cntr label label-info"></span>
 	<br>
 	<button type="submit" id="continue1" style="display:none;">Continue</button>	
 	</div>
 	
 <script type="template/text" id="newtmp1"> 
-  {{#posts2}}
+  {{#posts1}}
     <div class="entry1">
     <div class="tophalf1">
 
@@ -356,12 +326,12 @@ De två divsen nedan är för after task
     </div>
 
     </div>
-  {{/posts2}}
+  {{/posts1}}
 </script>
 </div>
 
 <div id="profiles2" style="display:none;">
-	<div id="countdown2"><span class="secs" style="display: none;"></span>You can now see how your first impression of the users compares to their descriptions of themselves.<br><br>time left:<br><span id="timer2" class="cntr label label-info"></span>
+	<div id="countdown2"><span class="secs" style="display: none;"></span>Please read what your groupmates think about this issue.<br><br>time left:<br><span id="timer2" class="cntr label label-info"></span>
 	<br>
 	<button type="submit" id="continue2" style="display:none;">Continue</button>	
 	</div>
@@ -393,13 +363,13 @@ De två divsen nedan är för after task
 </div>
 
 <div id="profiles3" style="display:none;">
-	<div id="countdown3"><span class="secs" style="display: none;"></span>You can now see how your first impression of the users compares to their descriptions of themselves.<br><br>time left:<br><span id="timer3" class="cntr label label-info"></span>
+	<div id="countdown3"><span class="secs" style="display: none;"></span>Please read what your groupmates think about this issue.<br><br>time left:<br><span id="timer3" class="cntr label label-info"></span>
 	<br>
 	<button type="submit" id="continue3" style="display:none;">Continue</button>	
 	</div>
 	
 <script type="template/text" id="newtmp3"> 
-  {{#posts2}}
+  {{#posts3}}
     <div class="entry1">
     <div class="tophalf1">
 
@@ -420,18 +390,18 @@ De två divsen nedan är för after task
     </div>
 
     </div>
-  {{/posts2}}
+  {{/posts3}}
 </script>
 </div>
 
 <div id="profiles4" style="display:none;">
-	<div id="countdown4"><span class="secs" style="display: none;"></span>You can now see how your first impression of the users compares to their descriptions of themselves.<br><br>time left:<br><span id="timer4" class="cntr label label-info"></span>
+	<div id="countdown4"><span class="secs" style="display: none;"></span>Please read what your groupmates think about this issue.<br><br>time left:<br><span id="timer4" class="cntr label label-info"></span>
 	<br>
 	<button type="submit" id="continue4" style="display:none;">Continue</button>	
 	</div>
 	
 <script type="template/text" id="newtmp4"> 
-  {{#posts2}}
+  {{#posts4}}
     <div class="entry1">
     <div class="tophalf1">
 
@@ -452,7 +422,7 @@ De två divsen nedan är för after task
     </div>
 
     </div>
-  {{/posts2}}
+  {{/posts4}}
 </script>
 </div>
 <!-- 
@@ -466,7 +436,7 @@ You can edit the instructions text.
 */ 
 -->
 <div id="task" style="display:none;">
-	<div id="countdown"><span class="secs" style="display: none;"></span>You can click "Like" if you want to know more about a user<br><br>time left:<br><span id="timer" class="cntr label label-info"></span>
+	<div id="countdown"><span class="secs" style="display: none;"></span>You can click "Pick" if you want to work with a specific user<br><br>time left:<br><span id="timer" class="cntr label label-info"></span>
 	<br>
 	<button type="submit" id='continue' style="display:none;">Continue</button>	
 	</div>
@@ -520,7 +490,7 @@ You can edit the instructions text.
 
     <div class="bottomhalf">
     	Likes <span class="badge badge-custom otherslikes" data-likes="{{likes}}">0</span>
-    	<button type="submit" class="btn pull-right btn-like btn-custom btn-deround">Like <i class="icon-thumbs-up icon-white"></i></button>
+    	<button type="submit" class="btn pull-right btn-like btn-custom btn-deround">Pick <i class="icon-thumbs-up icon-white"></i></button>
     </div>
 
     </div>
