@@ -20,7 +20,8 @@ $(function() {
 	// The avatar images used in the online preview of the paradigm were created using by pickaface.net and due to their terms not available for redistribution. You should therefore create your own images. All images should be 250x250 pixels in size and carry the names "avatar_NUMBER.png" (e.g. avatar_1.png; "png" should be lower case; the numbers in the names should be consequtive, starting from 1). The number of avatars dependeds on the corresponding parameter. The images should be placed in folder "avatars," located in the main study folder extracted on your computer or server.
 
     settings.numberofavatars = 40;
-
+    
+    settings.counter = 0;
 	
     // **Redirection**    
 	// After the introduction task is over participants should be redirected to a survey with manipulation checks and dependent measures, to subsequent tasks, or to further instructions. 
@@ -526,6 +527,14 @@ function init_profiles4() {
   		if(error == 0) {
   			$('#text1').hide();
   			window.description1 = $('#description1').val();
+			$("#loader1").show();
+			setTimeout(function() {
+  			//$('#msg_all_done').show();
+  			$("#loader").hide();
+			$('#after_task').hide();
+			//init_text1();
+			init_profiles1();
+  		}, 4000);
     			init_profiles1();  			
     		} else {
     			alertify.log(errormsg,"error");
@@ -662,7 +671,17 @@ function init_text4() {
 	
   	$('#submit_fb_login').on('click',function() {
 			$('#fb_login').hide();
-  			init_task();  			
+			if (settings.counter == 0) {
+  				init_task();
+			} else if (settings.counter == 1) {
+				init_profiles1();
+			} else if (settings.counter == 2) {
+				init_profiles2();
+			} else if (settings.counter == 3) {
+				init_profiles3();
+			} else if (settings.counter == 4) {
+				init_profiles4();
+			}
   	});	
   }
   
