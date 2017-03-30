@@ -10,7 +10,7 @@ window.others = {
 	"usergender": "male",
 	"userpolitic": "music, surfing the web and technology",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [12000, 20000, 25000] //3
+        "likes": [6000, 37000, 12000, 20000, 25000] //3
       },
 	  {
         "avatar": "avatars/others/george.png",
@@ -28,7 +28,7 @@ window.others = {
 	"usergender": "female",
 	"userpolitic": "yoga, technology and socializing",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [12000, 20000, 25000] //3
+        "likes": [9000, 12000, 20000, 25000] //3
       },
 	  {
         "avatar": "avatars/avatar_0.png",
@@ -37,7 +37,7 @@ window.others = {
 	"usergender": "male",
 	"userpolitic": "technology, cars and gaming",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [12000, 20000, 25000] //3
+        "likes": [13000, 180000, 28000] //3
       },
       {
         "avatar": "avatars/others/sarah.png",
