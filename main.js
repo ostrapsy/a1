@@ -168,7 +168,7 @@ function init_after_task_c2() {
   	  $('#continue1').show();
 
    	  $('#timer1').text('00:00');
-    
+    	  
    	  $('#continue1').on('click',function() {
 		//location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
 		$('#profiles1').hide();
@@ -335,54 +335,16 @@ function init_profiles4() {
 	  // Över nytt
 	  var tpl = $('#newtmp4').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles4").append(html);
-	  //var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
-	  //$("#profiles2").append(html);
-	  //$(window).unbind('beforeunload');
-	  //var names = ['Arjen','AncaD','Sarah','Jane',];
-	  //var times = [6000,12000,19000,28000];
-	  //var times = [15000,21000,28000,39000];
-	  //var antal = 4;
-	  //var index = 0;
 	  
-	  /* if (window.condition == 1) {
-	  	var themsg1 = names[0] + " clicked on George's link";
-	  	setTimeout(function(hej) {
-  				alertify.success(themsg1)
-  			}, times[0]);
-	  	var themsg2 = names[1] + " clicked on George's link";
-	  	setTimeout(function(nej) {
-  				alertify.success(themsg2)
-  			}, times[1]);
-	  	var themsg3 = names[2] + " clicked on George's link";
-	  	setTimeout(function(va) {
-  				alertify.success(themsg3)
-  			}, times[2]);
-	  	var themsg4 = names[3] + " clicked on George's link";
-	  	setTimeout(function(vem) {
-  				alertify.success(themsg4)
-  			}, times[3]);
-  	  } else if (window.condition == 2) {
-		var themsg1 = names[2] + " clicked on George's link";
-	  	setTimeout(function(hej) {
-  				alertify.success(themsg1)
-  			}, times[2]);
-	  }*/
-	  
-	  
-	  //Spara nedan! Funkar!
-	  //document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
 	  setTimeout(function() {
-    
-   	 //$(window).unbind('beforeunload');
     
   	  $('#continue4').show();
 
    	  $('#timer4').text('00:00');
-    
+	  $(window).unbind('beforeunload');
    	  $('#continue4').on('click',function() {
-		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d1='+encodeURI(window.description1)+'&d2='+encodeURI(window.description2)+'&d3='+encodeURI(window.description3)+'&d4='+encodeURI(window.description4)+'&click='+window.linkClick+'&old='+window.old;
+		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d1='+encodeURI(window.description1)+'&d2='+encodeURI(window.description2)+'&d3='+encodeURI(window.description3)+'&d4='+encodeURI(window.description4);
 		$('#profiles4').hide();
-  		init_text2();
 	  });
     
    	  },60000);
