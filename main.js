@@ -525,13 +525,14 @@ function init_profiles4() {
   			errormsg = 'Please enter less text';
   		}  		
   		if(error == 0) {
-  			$('#text1').hide();
+  			//$('#text1').hide();
   			window.description1 = $('#description1').val();
 			$("#loader1").show();
 			setTimeout(function() {
   			//$('#msg_all_done').show();
-  			$("#loader").hide();
-			$('#after_task').hide();
+  			$("#loader1").hide();
+			$('#text1').hide();
+			//$('#after_task').hide();
 			//init_text1();
 			init_profiles1();
   		}, 4000);
