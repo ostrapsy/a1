@@ -535,7 +535,7 @@ function init_profiles4() {
 			//init_text1();
 			init_profiles1();
   		}, 4000);
-    			init_profiles1();  			
+    			//init_profiles1();  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
