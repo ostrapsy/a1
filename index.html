@@ -225,25 +225,6 @@ You can edit the instructions text.
 	<button type="submit" id="submit_text3">Submit</button> <img class="load" src='ajax-loader.gif' id="loader3" style="display:none;">
 </div>
 
-<div id="text4" style="display:none;" class="instr">	
-<!-- 
-/* 
-  
-**Description entry**
----------
-You can edit the instructions text. 
-
-*/ 
--->	<h3>Write about issue 4</h3>
-	Bla. <br>
-	Bla. <br>
-	<br><br>	
-	<textarea id="description4" autocomplete="off" /></textarea><br>
-	<span id="count4">Characters left: 400</span><br><br>
-	<button type="submit" id="submit_text4">Submit</button> <img class="load" src='ajax-loader.gif' id="loader4" style="display:none;">
-</div>
-
-
 
 <div id="fb_intro" style="display:none;" class="instr">
 <!-- 
@@ -303,8 +284,34 @@ You can edit the instructions text. The prompt to try and form an impression of 
 	<br>
 	<button type="submit" id="continue1" style="display:none;">Continue</button>	
 	</div>
+<script type="template/text" id="usertmp1">
+  {{#posts}}
+    
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+    	<h3>{{username}}</h3>
 	
-<script type="template/text" id="newtmp1"> 
+    	<div class="main">
+	
+		<p>{{description1}}</p>
+    		
+    	</div>
+
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+	
+    </div>
+    </div>
+
+  {{/posts}}  
+</script>
+<script type="template/text" id="newtmp1">
+
   {{#posts1}}
     <div class="entry1">
     <div class="tophalf1">
@@ -396,38 +403,6 @@ You can edit the instructions text. The prompt to try and form an impression of 
 </script>
 </div>
 
-<div id="profiles4" style="display:none;">
-	<h3>Issue 4</h3>
-	<div id="countdown4"><span class="secs" style="display: none;"></span>Please read what your groupmates think about this issue.<br><br>time left:<br><span id="timer4" class="cntr label label-info"></span>
-	<br>
-	<button type="submit" id="continue4" style="display:none;">Continue</button>	
-	</div>
-	
-<script type="template/text" id="newtmp4"> 
-  {{#posts4}}
-    <div class="entry1">
-    <div class="tophalf1">
-
-    	<img src="{{avatar}}" class="avatar">
-        <h3>{{username}}</h3>
-    	
-    	<div class="main1">
-		<p><i>"A {{userage}} year old {{usergender}} who's into {{userpolitic}}."</i></p>
-		<p>{{text}}</p>
-    	</div>
-	
-	
-    	<br style="clear:both;">
-
-    </div>	
-
-    <div class="bottomhalf">
-    </div>
-
-    </div>
-  {{/posts4}}
-</script>
-</div>
 <!-- 
 /* 
   
