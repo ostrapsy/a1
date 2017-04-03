@@ -40,10 +40,10 @@ $(function() {
 	// In cases with only 1 "like," a second "like" is added with time point 9999999. This "like" is added for programming purposes and is never executed, as it is outside the task time
 
     // In condition 1, user will receive 5 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_1_likes = [7000, 9999999]; // 9
+    settings.condition_1_likes = [17000, 9999999]; // 9
 
     // In condition 2, user will receive 6 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [6000, 12000,19000,28000, 39000, 53000, 68000];  // 7
+    settings.condition_2_likes = [12000,22000,29000,38000, 43000, 68000, 79000];  // 7
 
     settings.task_likes = [9000, 15000,22000,31000,39000];  // 5
 	// **Others' likes**     
@@ -53,7 +53,7 @@ $(function() {
 	
     // Usernames by which the participant will receive "likes"
 	// If group member names are changed, these should be changed accordingly.
-    settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
+    settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Nicole','Heather','Ky'];
     //settings.likes_by_after = ['AncaD','Sarah','Jane','Nick','Dan','Heather','Ky'];
   }
   
@@ -101,7 +101,7 @@ function init_after_task_c2() {
 	  $('#profiles1').show();
 	  shortcut.add("Backspace",function() {});
 	  jQuery("#countdown1").countDown({
-  		startNumber: 60, // in seconds
+  		startNumber: 120, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer1').text('00:00');
@@ -140,7 +140,7 @@ function init_profiles2() {
 	  $('#profiles2').show();
 	  shortcut.add("Backspace",function() {});
 	  jQuery("#countdown2").countDown({
-  		startNumber: 60, // in seconds
+  		startNumber: 120, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer2').text('00:00');
@@ -182,7 +182,7 @@ function init_profiles3() {
 	  $('#profiles3').show();
 	  shortcut.add("Backspace",function() {});
 	  jQuery("#countdown3").countDown({
-  		startNumber: 60, // in seconds
+  		startNumber: 120, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer3').text('00:00');
