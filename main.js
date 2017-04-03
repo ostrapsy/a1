@@ -44,7 +44,7 @@ $(function() {
     settings.condition_1_likes = [7000, 9999999]; // 9
 
     // In condition 2, user will receive 6 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [6000, 12000,19000,28000, 39000];  // 5
+    settings.condition_2_likes = [6000, 12000,19000,28000, 39000, 53000, 68000];  // 7
 
     settings.task_likes = [9000, 15000,22000,31000,39000];  // 5
 	// **Others' likes**     
