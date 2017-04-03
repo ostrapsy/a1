@@ -108,6 +108,20 @@ function init_after_task_c2() {
           $('#timer1').text('00:00');
   		}
   	  });
+	  users = {
+		  "posts" : [
+			{
+			  "avatar": 'avatars/' + window.avatar + '.png',
+			  "username": window.username,
+			  "userage": window.age,
+			  "usergender": window.gender,
+			  "userpolitic": window.politic,
+			  "text": window.description1,
+			  "likes": window.settings.condition_likes,
+			  "usernames": window.settings.likes_by
+			}
+		  ]
+		};
 	  var tpl = $('#usertmp1').html(),html = Mustache.to_html(tpl, users);
 	  $("#profiles1").append(html);
 	  var tpl = $('#newtmp1').html(),html = Mustache.to_html(tpl, others3);
@@ -133,6 +147,20 @@ function init_profiles2() {
           $('#timer2').text('00:00');
   		}
   	  });
+	users = {
+		  "posts" : [
+			{
+			  "avatar": 'avatars/' + window.avatar + '.png',
+			  "username": window.username,
+			  "userage": window.age,
+			  "usergender": window.gender,
+			  "userpolitic": window.politic,
+			  "text": window.description2,
+			  "likes": window.settings.condition_likes,
+			  "usernames": window.settings.likes_by
+			}
+		  ]
+		};
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  setTimeout(function() {
@@ -159,6 +187,20 @@ function init_profiles3() {
           $('#timer3').text('00:00');
   		}
   	  });
+	users = {
+		  "posts" : [
+			{
+			  "avatar": 'avatars/' + window.avatar + '.png',
+			  "username": window.username,
+			  "userage": window.age,
+			  "usergender": window.gender,
+			  "userpolitic": window.politic,
+			  "text": window.description3,
+			  "likes": window.settings.condition_likes,
+			  "usernames": window.settings.likes_by
+			}
+		  ]
+		};
 	  var tpl = $('#newtmp3').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles3").append(html);
 	  setTimeout(function() {
