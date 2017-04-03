@@ -10,7 +10,7 @@ window.others = {
 	"usergender": "male",
 	"userpolitic": "music, surfing the web and technology",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [6000, 37000, 12000, 20000, 25000] //3
+        "likes": [7000, 12000, 20000, 35000, 60000] //3
       },
 	  {
         "avatar": "avatars/others/george.png",
@@ -19,7 +19,7 @@ window.others = {
 	"usergender": "male",
 	"userpolitic": "technology",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [12000, 20000, 25000] //3
+        "likes": [12000, 30000, 45000, 70000] //3
       },
 	  {
         "avatar": "avatars/others/avatar_11.png",
@@ -28,7 +28,7 @@ window.others = {
 	"usergender": "female",
 	"userpolitic": "yoga, technology and socializing",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
-        "likes": [9000, 12000, 20000, 25000] //3
+        "likes": [9000, 12000, 20000, 25000, 33000] //3
       },
 	  {
         "avatar": "avatars/others/avatar_0.png",
@@ -46,7 +46,7 @@ window.others = {
 	"usergender": "female",
 	"userpolitic": "music, physical exercise and socializing",
         "text": "Let me introduce myself. I’m Sarah, married, and mother of two wonderful (grown up) children. My career has been a bit peculiar. Starting off as a graduate historian, I switched to an entirely different discipline: occupational assessor trying to help young people with disabilities to get a job. I’ve just retired and started spending more time on my hobbies, such as singing, reading, and playing volleyball. A group I am a member of is The Texas Vols!",
-        "likes": [4000, 6000,11000,22000,26000,28000] //6
+        "likes": [6000,18000,22000,36000,48000, 63000] //6
       },
       {
         "avatar": "avatars/others/john.png",
@@ -55,7 +55,7 @@ window.others = {
 	"usergender": "male",
 	"userpolitic": "films and cars",
         "text": "Hi there, I’m 57 years old, married, with two kids. I’ve been a computer programmer in the states for about 30 years, but don’t worry: I don’t have the dusty haircut, oversized buttoned shirt and nerdie big frame glasses. I am a member of a group called World War Ethusiasts- we recreate and discuss things a war related. Cheers, John",
-		"likes": [5000, 16000, 22000, 25000] //4
+		"likes": [9000, 16000, 32000, 44000] //4
       },
       {
         "avatar": "avatars/others/anca.png",
