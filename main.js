@@ -162,7 +162,7 @@ function init_profiles2() {
 		  ]
 		};
 	  var tpl = $('#usertmp1').html(),html = Mustache.to_html(tpl, users);
-	  $("#profiles1").append(html);
+	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  setTimeout(function() {
@@ -204,7 +204,7 @@ function init_profiles3() {
 		  ]
 		};
 	  var tpl = $('#usertmp1').html(),html = Mustache.to_html(tpl, users);
-	  $("#profiles1").append(html);
+	  $("#profiles3").append(html);
 	  var tpl = $('#newtmp3').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles3").append(html);
 	  setTimeout(function() {
