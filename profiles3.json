@@ -9,7 +9,7 @@ window.others3 = {
 	"userage": "26",
 	"usergender": "male",
 	"userpolitic": "technology",
-        "text": "[Insert text1]",
+        "text": "We need to get back to basics. Get rid of capitalism and private companies!!! Live in smaller communities where we share all of our resources with each other and grow our own food!!! ",
         "likes": [12000, 20000, 25000] //3
       },
       {
@@ -19,7 +19,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "football, technology and reading",
 	"shownlikes": "5",
-        "text": "[Insert text1]",
+        "text": "It’s not fair that a few people are allowed to have all this money and others are poor :(. We need to make them redistribute their wealth, I don’t care if we have to use force. Tax them 70% and give the money to those who need it :)",
         "likes": [10000, 12000, 40000, 80000, 120000] //5
       },
       {
@@ -29,7 +29,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "music, physical exercise and socializing",
 	"shownlikes": "5",
-        "text": "[Insert text1]",
+        "text": "I honestly don’t get who decided Capitalism was the way to go. all it’s ever done is destroy our societies and forced us to compete for our basic NEEDS. And by the way, trickle-down economics is a JOKE. we’re all trapped in this sick system of modern-day slavery.",
         "likes": [12000, 14000,15000,35000,80000,100000,110000,150000,20000] //9
       },
       {
@@ -39,18 +39,8 @@ window.others3 = {
 	"usergender": "male",
 	"userpolitic": "technology, reading and gaming",
 	"shownlikes": "3",
-        "text": "[Insert text1]",
+        "text": "Capitalism is the worst economic system ever!! The only people who benefit from it are large corporations and the 1% that control most of the world’s wealth. Honestly I think the 1% should all be thrown in jail for profiting so much of everyone else’s suffering. Whoever thought up this system should be shot!!!!",
         "likes": [12000, 17000, 24000] //3
-      },
-      {
-        "avatar": "avatars/others/jane.png",
-        "username": "Jane",
-	"userage": "36",
-	"usergender": "female",
-	"userpolitic": "physical exercise, reading and socializing",
-	"shownlikes": "4",
-        "text": "[Insert text1]",
-        "likes": [10000, 15000, 24000, 28000] //4
       },
     ],
   "posts2" : [
@@ -60,7 +50,7 @@ window.others3 = {
 	"userage": "26",
 	"usergender": "male",
 	"userpolitic": "technology",
-        "text": "[Insert text2]",
+        "text": "We need Immigration!!! It creates diversity and boosts the local economy. It gives cross cultural understanding which is needed to prevent conflicts and wars of any kind. Every country should be open to foreign cultures and promote cultural exchange. It is absolute necessary to make this world a better place!!! Isn’t every human equal and deserving of the same chance to live a free and independent life?",
         "likes": [12000, 20000, 25000] //3
       },
       {
@@ -70,7 +60,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "football, technology and reading",
 	"shownlikes": "5",
-        "text": "[Insert text2]",
+        "text": "Immigration is great and brings many benefits :). We should all welcome refugees and invite them into our lives. We have no idea what it is like to flee our home country because there is civil war and corruption, so why don’t we show more empathy and respect :)",
         "likes": [10000, 12000, 40000, 80000, 120000] //5
       },
       {
@@ -80,7 +70,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "music, physical exercise and socializing",
 	"shownlikes": "5",
-        "text": "[Insert text2]",
+        "text": "I just cut the relation with people who are against immigration. I couldn’t be friend with those people any longer. how can one only think of threats and danger when talking about immigration? some people seriously should be EDUCATED about actual reasons behind immigration, to get the big picture.",
         "likes": [12000, 14000,15000,35000,80000,100000,110000,150000,20000] //9
       },
       {
@@ -90,18 +80,8 @@ window.others3 = {
 	"usergender": "male",
 	"userpolitic": "technology, reading and gaming",
 	"shownlikes": "3",
-        "text": "[Insert text2]",
+        "text": "Why do so many people remain unaffected when the news reports on another sunken boat filled with 200 refugees?!?! These are 200 human beings but everyone just acts like, out of sight, out of the mind. It’s disgusting! Refugees need our help and we should all take the lead in integrating them! ",
         "likes": [12000, 17000, 24000] //3
-      },
-      {
-        "avatar": "avatars/others/jane.png",
-        "username": "Jane",
-	"userage": "36",
-	"usergender": "female",
-	"userpolitic": "physical exercise, reading and socializing",
-	"shownlikes": "4",
-        "text": "[Insert text2]",
-        "likes": [10000, 15000, 24000, 28000] //4
       },
     ],
 "posts3" : [
@@ -111,7 +91,7 @@ window.others3 = {
 	"userage": "26",
 	"usergender": "male",
 	"userpolitic": "technology",
-        "text": "[Insert text3]",
+        "text": "The fact that women earn consistently less than men is a shame. It should be the other way around. In many areas women show much better leading qualities than men, yet earn less. I encourage all women to speak up for equality, but more importantly I encourage men to support this. We should all be feminists!!!",
         "likes": [12000, 20000, 25000] //3
       },
       {
@@ -121,7 +101,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "football, technology and reading",
 	"shownlikes": "5",
-        "text": "[Insert text3]",
+        "text": "The fact that gender equality is still an issue to fight for makes me feel desperate :( . Come on, we live in 2017 and yet gender equality is not existing. Let’s finally correct this imbalance and fight for equal rights (:muscle:)",
         "likes": [10000, 12000, 40000, 80000, 120000] //5
       },
       {
@@ -131,7 +111,7 @@ window.others3 = {
 	"usergender": "female",
 	"userpolitic": "music, physical exercise and socializing",
 	"shownlikes": "5",
-        "text": "[Insert text3]",
+        "text": "Men who seriously believ in traditional gender roles freak me out. what if we switched positions? women earn the money and feed the family, and the man cleans the house and cooks food. men with this old-school thinkin should finally understand that their status as a male does not give them superiority. seriously, READ A BOOK!",
         "likes": [12000, 14000,15000,35000,80000,100000,110000,150000,20000] //9
       },
       {
@@ -141,18 +121,8 @@ window.others3 = {
 	"usergender": "male",
 	"userpolitic": "technology, reading and gaming",
 	"shownlikes": "3",
-        "text": "[Insert text3]",
+        "text": "In my opinon our patriarchal society is so damaging it’s actually impossible for women to be truly equal within it. We need more women’s only spaces!! then women can spend time there until society changes and it’s no longer so hostile towards them. People who don’t support women’s rights are idiots!!!",
         "likes": [12000, 17000, 24000] //3
-      },
-      {
-        "avatar": "avatars/others/jane.png",
-        "username": "Jane",
-	"userage": "36",
-	"usergender": "female",
-	"userpolitic": "physical exercise, reading and socializing",
-	"shownlikes": "4",
-        "text": "[Insert text3]",
-        "likes": [10000, 15000, 24000, 28000] //4
       },
     ],
 "posts4" : [
