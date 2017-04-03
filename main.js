@@ -242,7 +242,7 @@ function init_profiles3() {
   		}
   		if(not_alphanumeric(uname)) {
   			error = 1;
-  			errormsg = 'Please only letters (and no spaces)';
+  			errormsg = 'Please only letters (A-Z, a-z) and no spaces';
   		}  		
 
   		if(error == 0) {
