@@ -21,7 +21,6 @@ $(function() {
 
     settings.numberofavatars = 40;
     
-    settings.counter = 0;
 	
     // **Redirection**    
 	// After the introduction task is over participants should be redirected to a survey with manipulation checks and dependent measures, to subsequent tasks, or to further instructions. 
@@ -33,7 +32,7 @@ $(function() {
 	
 	// **Tasklength**     
     // Length of the group introduction task in milliseconds. Can be changed to any number (in ms). Default: 180000 (3min) 
-    settings.tasklength = 60000; 
+    settings.tasklength = 90000; 
 
 	
 	// **Number** **of** **"likes"**    
@@ -133,7 +132,7 @@ function init_after_task_c2() {
 		$('#profiles1').hide();
   		init_text2();
 	  });
-    	},60000);
+    	},120000);
    }
 	
 function init_profiles2() {
@@ -173,7 +172,7 @@ function init_profiles2() {
   		init_text3();
 	  });
     
-   	  },60000);
+   	  },120000);
 	  
 	 
   }
@@ -216,7 +215,7 @@ function init_profiles3() {
 			$('#profiles3').hide();
 	  });
     
-   	  },60000);
+   	  },120000);
 	   
   }
 	
@@ -400,7 +399,7 @@ function init_profiles3() {
   				$("#loader1").hide();
 				$('#text1').hide();
 				init_profiles1();
-  			}, 4000);			
+  			}, 8000);			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -438,7 +437,7 @@ function init_text2() {
   				$("#loader2").hide();
 				$('#text2').hide();
 				init_profiles2();
-  			}, 4000);  			
+  			}, 8000);  			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -476,7 +475,7 @@ function init_text3() {
   				$("#loader3").hide();
 				$('#text3').hide();
 				init_profiles3();
-  			}, 4000); 			
+  			}, 8000); 			
     		} else {
     			alertify.log(errormsg,"error");
     		}
@@ -510,17 +509,7 @@ function init_text3() {
 	
   	$('#submit_fb_login').on('click',function() {
 			$('#fb_login').hide();
-			if (settings.counter == 0) {
-  				init_task();
-			} else if (settings.counter == 1) {
-				init_profiles1();
-			} else if (settings.counter == 2) {
-				init_profiles2();
-			} else if (settings.counter == 3) {
-				init_profiles3();
-			} else if (settings.counter == 4) {
-				init_profiles4();
-			}
+  			init_task();
   	});	
   }
   
