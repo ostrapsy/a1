@@ -212,7 +212,7 @@ function init_profiles3() {
 	  	$(window).unbind('beforeunload');
    	  	$('#continue3').on('click',function() {
 			location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d1='+encodeURI(window.description1)+'&d2='+encodeURI(window.description2)+'&d3='+encodeURI(window.description3);
-			$('#profiles3').hide();
+			//$('#profiles3').hide();
 	  });
     
    	  },120000);
@@ -669,11 +669,11 @@ function init_text3() {
     } else {
 	  window.redirect = window.settings.defaultredirect;
 	}
-	/*
+	
 	var urlHasQuestionMark = (window.redirect.indexOf("?") > -1);
 	if(!urlHasQuestionMark) {
 		window.redirect = window.redirect+"?redir=1";
-	}*/
+	}
 	//alert(window.redirect);
 
   }
