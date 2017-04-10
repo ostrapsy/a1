@@ -101,7 +101,7 @@ function init_after_task_c2() {
 	  $('#profiles1').show();
 	  shortcut.add("Backspace",function() {});
 	  jQuery("#countdown1").countDown({
-  		startNumber: 120, // in seconds
+  		startNumber: 90, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer1').text('00:00');
@@ -132,7 +132,7 @@ function init_after_task_c2() {
 		$('#profiles1').hide();
   		init_text2();
 	  });
-    	},120000);
+    	},90000);
    }
 	
 function init_profiles2() {
@@ -140,7 +140,7 @@ function init_profiles2() {
 	  $('#profiles2').show();
 	  shortcut.add("Backspace",function() {});
 	  jQuery("#countdown2").countDown({
-  		startNumber: 120, // in seconds
+  		startNumber: 90, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer2').text('00:00');
@@ -172,7 +172,7 @@ function init_profiles2() {
   		init_text3();
 	  });
     
-   	  },120000);
+   	  },90000);
 	  
 	 
   }
@@ -182,7 +182,7 @@ function init_profiles3() {
 	  $('#profiles3').show();
 	  shortcut.add("Backspace",function() {});
 	  jQuery("#countdown3").countDown({
-  		startNumber: 120, // in seconds
+  		startNumber: 90, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer3').text('00:00');
@@ -215,7 +215,7 @@ function init_profiles3() {
 			//$('#profiles3').hide();
 	  });
     
-   	  },120000);
+   	  },90000);
 	   
   }
 	
